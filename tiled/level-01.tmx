@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="15">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="18">
  <editorsettings>
   <export target="../public/assets/maps/map-level-01.json" format="json"/>
  </editorsettings>
@@ -25,84 +25,96 @@
  </layer>
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2,2,2,2,2,2,2,5,5,8,0,8,8,8,6,0,0,
-0,0,0,2,2,5,6,6,6,6,0,0,0,0,0,0,0,6,0,0,
-0,0,0,2,2,0,6,6,6,6,0,0,0,0,0,0,0,6,6,0,
-0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,
-0,0,0,2,2,0,0,0,0,0,2,2,2,2,2,2,0,5,6,0,
-0,0,0,2,2,5,5,5,5,5,2,2,6,6,6,6,6,6,5,0,
-0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,2,2,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,
+2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,
+2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,
+2,2,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,2,2,
+2,0,0,0,2,2,2,2,2,2,2,2,0,0,0,8,8,0,2,2,
+2,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,2,2,
+2,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,6,0,2,
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,
+2,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2,
+2,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2,
+2,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,2,2,2,2,
+2,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,2,2,2,2,
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 </data>
  </layer>
- <objectgroup id="3" name="SpawnPoints">
-  <object id="8" name="SpawnPlayer" x="192" y="288"/>
-  <object id="9" name="NPC" x="416" y="224"/>
+ <objectgroup id="3" name="SpawnPoints" visible="0">
+  <object id="8" name="SpawnPlayer" x="204" y="401"/>
+  <object id="9" name="NPC" x="205" y="88"/>
  </objectgroup>
  <objectgroup id="4" name="Items">
-  <object id="1" name="Mushroom" gid="3" x="316.671" y="226.09" width="32" height="32">
+  <object id="1" name="Mushroom" gid="3" x="69.671" y="290.09" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
     <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
-  <object id="2" name="Mushroom" gid="3" x="347.773" y="227.514" width="32" height="32">
+  <object id="2" name="Mushroom" gid="3" x="225.773" y="286.514" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
     <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
-  <object id="3" name="Mushroom" gid="3" x="375.223" y="227.468" width="32" height="32">
+  <object id="17" name="Mushroom" gid="3" x="444.773" y="449.514" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
     <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
-  <object id="4" name="Flower" gid="4" x="512" y="320" width="32" height="32">
+  <object id="16" name="Mushroom" gid="3" x="195.773" y="417.514" width="32" height="32">
+   <properties>
+    <property name="damageHp" type="int" value="10"/>
+    <property name="restoreHp" type="int" value="20"/>
+   </properties>
+  </object>
+  <object id="3" name="Mushroom" gid="3" x="446.223" y="190.468" width="32" height="32">
+   <properties>
+    <property name="damageHp" type="int" value="10"/>
+    <property name="restoreHp" type="int" value="20"/>
+   </properties>
+  </object>
+  <object id="4" name="Flower" gid="4" x="512" y="320" width="32" height="32" visible="0">
    <properties>
     <property name="damageHp" type="int" value="20"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
-  <object id="11" name="Flower" gid="4" x="161.627" y="227.422" width="32" height="32">
+  <object id="11" name="Flower" gid="4" x="161.627" y="227.422" width="32" height="32" visible="0">
    <properties>
     <property name="damageHp" type="int" value="20"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
-  <object id="5" name="Flower" gid="4" x="190.113" y="228.985" width="32" height="32">
+  <object id="5" name="Flower" gid="4" x="190.113" y="228.985" width="32" height="32" visible="0">
    <properties>
     <property name="damageHp" type="int" value="20"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
-  <object id="13" name="Flower" gid="4" x="159.491" y="258.895" width="32" height="32">
+  <object id="13" name="Flower" gid="4" x="159.491" y="258.895" width="32" height="32" visible="0">
    <properties>
     <property name="damageHp" type="int" value="20"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
-  <object id="6" name="Flower" gid="4" x="354.229" y="319.288" width="32" height="32">
+  <object id="6" name="Flower" gid="4" x="354.229" y="319.288" width="32" height="32" visible="0">
    <properties>
     <property name="damageHp" type="int" value="20"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
-  <object id="12" name="Flower" gid="4" x="355.653" y="352.046" width="32" height="32">
+  <object id="12" name="Flower" gid="4" x="355.653" y="352.046" width="32" height="32" visible="0">
    <properties>
     <property name="damageHp" type="int" value="20"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="5" name="Doors" visible="0">
+ <objectgroup id="5" name="Doors">
   <object id="7" name="Cave" gid="7" x="416" y="192" width="32" height="32">
    <properties>
     <property name="goToWorld" value="level-02"/>
