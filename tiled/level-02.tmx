@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="34">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="82">
  <editorsettings>
   <export target="../public/assets/maps/map-level-02.json" format="json"/>
  </editorsettings>
@@ -25,42 +25,27 @@
  </layer>
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
-8,8,8,8,2,2,2,8,8,8,8,8,8,8,8,0,8,6,6,0,
-2,5,5,2,0,0,2,2,2,5,2,2,0,0,0,0,0,6,6,0,
-5,0,0,5,0,0,2,2,5,5,2,2,0,0,0,6,2,6,6,0,
-5,0,0,0,0,0,2,5,0,5,2,2,6,0,0,6,6,6,6,0,
-5,0,0,0,0,0,5,5,5,5,5,2,2,0,0,2,6,6,6,0,
-5,0,0,5,0,0,2,2,2,5,2,2,2,0,0,6,6,6,0,0,
-2,5,5,2,0,0,2,2,2,5,2,2,0,0,0,6,6,0,0,0,
-6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,6,0,0,0,
-6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,2,2,0,0,
-5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,2,2,0,0,
-2,0,2,5,5,5,5,5,6,6,6,6,6,6,6,6,2,0,0,0,
-2,0,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,3,3,3,3,0,0,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,3,3,3,3,0,0,0,0,0
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,2,2,2,
+2,2,2,2,0,0,2,2,2,2,2,0,0,2,2,0,0,2,2,2,
+2,2,2,5,0,0,0,0,2,2,0,0,0,0,2,0,2,2,0,2,
+2,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,2,2,6,2,
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,6,2,
+2,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,2,
+2,2,2,2,2,2,2,2,0,0,0,0,2,0,0,0,0,0,0,2,
+2,2,2,2,2,2,2,2,2,2,0,0,2,2,0,0,0,0,0,2,
+2,2,0,0,0,0,0,0,2,2,0,0,2,0,0,6,0,0,0,2,
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,
+2,0,0,2,2,2,0,0,0,0,0,0,0,6,2,2,2,2,2,2,
+2,0,0,2,2,2,0,0,0,0,0,0,0,2,2,2,2,2,0,2,
+2,0,0,2,2,2,0,0,0,2,2,0,2,2,2,2,0,0,0,2,
+2,0,0,2,2,2,0,0,2,2,2,2,2,2,0,0,0,0,0,2,
+2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,2,0,0,2
 </data>
  </layer>
  <objectgroup id="3" name="SpawnPoints">
-  <object id="12" name="SpawnPlayer" x="48" y="416"/>
+  <object id="12" name="SpawnPlayer" x="578.667" y="454.667"/>
  </objectgroup>
  <objectgroup id="4" name="Items">
-  <object id="2" name="Mushroom" gid="3" x="448" y="288" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="20"/>
-   </properties>
-  </object>
-  <object id="3" name="Mushroom" gid="3" x="448" y="320" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="20"/>
-   </properties>
-  </object>
-  <object id="4" name="Mushroom" gid="3" x="416" y="320" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="20"/>
-   </properties>
-  </object>
   <object id="8" name="Flower" gid="4" x="512" y="64" width="32" height="32">
    <properties>
     <property name="restoreHp" type="int" value="10"/>
@@ -81,9 +66,16 @@
     <property name="restoreHp" type="int" value="10"/>
    </properties>
   </object>
-  <object id="19" x="413" y="549" width="11" height="1"/>
+  <object id="72" name="Mushroom" gid="3" x="581.333" y="385.333" width="32" height="32"/>
+  <object id="73" name="Mushroom" gid="3" x="357.333" y="226.667" width="32" height="32"/>
+  <object id="74" name="Mushroom" gid="3" x="262.667" y="225.333" width="32" height="32"/>
+  <object id="75" name="Mushroom" gid="3" x="132" y="65.3333" width="32" height="32"/>
+  <object id="76" name="Mushroom" gid="3" x="356" y="62.6667" width="32" height="32"/>
+  <object id="77" name="Mushroom" gid="3" x="580" y="96" width="32" height="32"/>
+  <object id="78" name="Mushrooms" gid="3" x="36" y="442.667" width="32" height="32"/>
+  <object id="80" name="Mushroom" gid="3" x="126.667" y="66.6667" width="32" height="32"/>
  </objectgroup>
- <objectgroup id="5" name="Doors" visible="0">
+ <objectgroup id="5" name="Doors">
   <object id="1" name="Cave" gid="7" x="480" y="32" width="32" height="32">
    <properties>
     <property name="goToWorld" value="level-03"/>
