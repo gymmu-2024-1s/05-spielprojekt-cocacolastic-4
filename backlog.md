@@ -10,3 +10,6 @@
 - [ ] Komponenten für Items hinzufügen.
 - [ ] Dialogsystem hinzufügen.
 - [ ] Inventar hinzufügen.
+- [x] Map Level 1,2 angefangen, muss aber abgeändert werden
+- [x] Map Level 3 angefangen
+- [x] Level 4 erstellt
