@@ -5,8 +5,11 @@
 - [x] Dokumentation vollständig durchlesen
 - [x] Name des Spiels ändern
 - [x] Spielidee auf der Webseite beschreiben (kann später noch erweitert werden)
-- [ ] Eigene Spritesheets erstellen
+- [x] Eigene Spritesheets erstellen
 - [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
 - [ ] Komponenten für Items hinzufügen.
 - [ ] Dialogsystem hinzufügen.
 - [ ] Inventar hinzufügen.
+- [x] Map Level 1,2 angefangen, muss aber abgeändert werden
+- [x] Map Level 3 angefangen
+- [x] Level 4 erstellt
