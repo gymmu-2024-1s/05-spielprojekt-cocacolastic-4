@@ -14,10 +14,15 @@ export default class LoadingScene extends Phaser.Scene {
    */
   preload() {
     // Lade das Spritesheet für den Spieler.
-    this.load.spritesheet("player", "./assets/player.png", {
-      frameWidth: 32,
-      frameHeight: 32,
-    })
+    this.load.spritesheet(
+      "player",
+      "./assets/player.png",
+
+      {
+        frameWidth: 32,
+        frameHeight: 32,
+      },
+    )
 
     // Lade das Tileset für die Karten und die Objekte.
     this.load.image("tileset", "./assets/tileset.png")
@@ -52,7 +57,7 @@ export default class LoadingScene extends Phaser.Scene {
 
   update() {
     if (this.SPACE.isDown) {
-      this.scene.start("level-03")
+      this.scene.start("level-01")
     }
   }
 
