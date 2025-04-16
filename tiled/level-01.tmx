@@ -42,7 +42,7 @@
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 </data>
  </layer>
- <objectgroup id="3" name="SpawnPoints" visible="0">
+ <objectgroup id="3" name="SpawnPoints">
   <object id="8" name="SpawnPlayer" x="204" y="401"/>
   <object id="9" name="NPC" x="205" y="88"/>
  </objectgroup>
