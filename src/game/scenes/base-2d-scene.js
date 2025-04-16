@@ -125,6 +125,13 @@ export default class Base2DScene extends Phaser.Scene {
       () => true,
       this,
     )
+    this.physics.add.overlap(
+      this.player,
+      this.npcs,
+      this.collideenemy,
+      () => true,
+      this,
+    )
 
     this.physics.add.collider(
       this.player,
@@ -156,6 +163,11 @@ export default class Base2DScene extends Phaser.Scene {
    */
   pickUp(actor, item) {
     item.destroy()
+  }
+  collideenemy(actor, enemy) {
+    enemy.destroy()
+
+    actor.damage(20)
   }
 
   /**
