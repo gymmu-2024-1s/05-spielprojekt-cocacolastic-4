@@ -13,3 +13,5 @@
 - [x] Map Level 1,2 angefangen, muss aber abgeändert werden
 - [x] Map Level 3 angefangen
 - [x] Level 4 erstellt
+- [x] NPC gemalt und eingesetzt
+- [ ] Text für Präsentation auf Word geschrieben
