@@ -179,12 +179,11 @@ export default class Base2DScene extends Phaser.Scene {
    * definiert und wird in **Tiled** gesetzt.
    */
   enterDoor(actor, door) {
+    console.log(door.props)
     const { goToWorld, needKey } = door.props
     if (goToWorld == null) return
-    if (needKey == null) {
-      this.scene.start(goToWorld)
-      return
-    }
+
+    this.scene.start(goToWorld)
 
     if (actor.keys[needKey] > 0) {
       this.scene.start(goToWorld)
