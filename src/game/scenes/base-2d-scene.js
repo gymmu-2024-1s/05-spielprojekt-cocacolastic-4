@@ -125,6 +125,13 @@ export default class Base2DScene extends Phaser.Scene {
       () => true,
       this,
     )
+    this.physics.add.overlap(
+      this.player,
+      this.npcs,
+      this.collideenemy,
+      () => true,
+      this,
+    )
 
     this.physics.add.collider(
       this.player,
@@ -157,6 +164,11 @@ export default class Base2DScene extends Phaser.Scene {
   pickUp(actor, item) {
     item.destroy()
   }
+  collideenemy(actor, enemy) {
+    enemy.destroy()
+
+    actor.damage(20)
+  }
 
   /**
    * Diese Methode wird immer dann aufgerufen, wenn ein Spieler mit einer Türe
@@ -167,12 +179,11 @@ export default class Base2DScene extends Phaser.Scene {
    * definiert und wird in **Tiled** gesetzt.
    */
   enterDoor(actor, door) {
+    console.log(door.props)
     const { goToWorld, needKey } = door.props
     if (goToWorld == null) return
-    if (needKey == null) {
-      this.scene.start(goToWorld)
-      return
-    }
+
+    this.scene.start(goToWorld)
 
     if (actor.keys[needKey] > 0) {
       this.scene.start(goToWorld)
